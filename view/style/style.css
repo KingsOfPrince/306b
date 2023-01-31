@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo
+{
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.toggle
+{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+.toggle.active
+{
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+.showcase
+{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: inline;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+.showcase.active
+{
+  right: 300px;
+}
+
+
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #03a9f4;
+  mix-blend-mode: overlay;
+}
+.text
+{
+  position: relative;
+  z-index: 10;
+}
+
+.text h2
+{
+  font-size: 5em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+  margin-top: 200px;
+}
+.text h3{
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.text a:hover
+{
+  letter-spacing: 6px;
+}
+
+.text h4
+{
+text-align: center;
+color:aliceblue;
+}
+
+
+.login {  
+  width: 500px;  
+  overflow: hidden;  
+  margin: auto;
+  margin-block-start: 130px;
+
+  padding: 100px;  
+  padding-top: 50px;
+  background: rgba(89, 89, 89, 0.477);  
+  border-radius: 15px;
+}  
+
+h1.log-in {  
+  text-align: center;  
+  color: #ffffff;  
+  padding: 20px;  
+} 
+
+label {  
+  color: rgb(255, 255, 255);  
+  font-size: 17px;  
+}
+
+#username {  
+  width: 300px;  
+  height: 30px;  
+  border: none;  
+  border-radius: 20px;  
+  padding-left: 8px;
+} 
+
+#password {  
+  width: 300px;  
+  height: 30px;  
+  border: none;  
+  border-radius: 20px;  
+  padding-left: 8px;   
+}  
+
+button.log-in {
+  width: 100px;  
+  height: 30px;  
+  border: none;  
+  border-radius: 17px;  
+  padding-left: 4px;  
+  color: rgb(0, 0, 0); 
+  margin: auto;
+  margin-left: 100px;
+  font-size: large;
+
+}
+
+span {  
+  color: white;  
+  font-size: 17px;  
+} 
+
+div button:hover {
+  background-color: #97db19;
+  font-size: medium;
+  color: #000000;
+}
+
+table.products-categorys-table {
+  border: 1px solid rgb(19, 19, 19);
+  border-collapse: collapse;
+  background-color: rgb(167, 166, 166);
+  
+}
+
+th.products-categorys-header {
+  border: 3px solid rgb(38, 38, 38);
+  min-width: 100px;
+  border-collapse: collapse;
+  background-color: rgb(143, 143, 143);
+  font-size: larger;
+  color: #ffffff;
+}
+
+td {
+  border: 3px solid rgb(46, 46, 46);
+  border-collapse: collapse;
+  background-color: rgb(235, 235, 235);
+  color: rgb(255, 255, 255);
+  font-size: large;
+}
